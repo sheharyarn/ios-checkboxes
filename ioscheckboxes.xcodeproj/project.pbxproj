@@ -21,6 +21,8 @@
 		40D4254C194507AB0014EAB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D4252E194507AB0014EAB9 /* UIKit.framework */; };
 		40D42554194507AB0014EAB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40D42552194507AB0014EAB9 /* InfoPlist.strings */; };
 		40D42556194507AB0014EAB9 /* ioscheckboxesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D42555194507AB0014EAB9 /* ioscheckboxesTests.m */; };
+		40D42561194508260014EAB9 /* checkboxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D42560194508260014EAB9 /* checkboxButton.m */; };
+		40D42564194511630014EAB9 /* staticCheckboxes.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D42563194511630014EAB9 /* staticCheckboxes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		40D42551194507AB0014EAB9 /* ioscheckboxesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ioscheckboxesTests-Info.plist"; sourceTree = "<group>"; };
 		40D42553194507AB0014EAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40D42555194507AB0014EAB9 /* ioscheckboxesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ioscheckboxesTests.m; sourceTree = "<group>"; };
+		40D4255F194508260014EAB9 /* checkboxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkboxButton.h; sourceTree = "<group>"; };
+		40D42560194508260014EAB9 /* checkboxButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = checkboxButton.m; sourceTree = "<group>"; };
+		40D42562194511630014EAB9 /* staticCheckboxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticCheckboxes.h; sourceTree = "<group>"; };
+		40D42563194511630014EAB9 /* staticCheckboxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = staticCheckboxes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +118,10 @@
 		40D42530194507AB0014EAB9 /* ioscheckboxes */ = {
 			isa = PBXGroup;
 			children = (
-				40D42539194507AB0014EAB9 /* AppDelegate.h */,
-				40D4253A194507AB0014EAB9 /* AppDelegate.m */,
 				40D4253C194507AB0014EAB9 /* Main.storyboard */,
-				40D4253F194507AB0014EAB9 /* ViewController.h */,
-				40D42540194507AB0014EAB9 /* ViewController.m */,
-				40D42542194507AB0014EAB9 /* Images.xcassets */,
+				40D4255F194508260014EAB9 /* checkboxButton.h */,
+				40D42560194508260014EAB9 /* checkboxButton.m */,
+				40D425651945117E0014EAB9 /* Static Checkboxes */,
 				40D42531194507AB0014EAB9 /* Supporting Files */,
 			);
 			path = ioscheckboxes;
@@ -126,6 +130,11 @@
 		40D42531194507AB0014EAB9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				40D42542194507AB0014EAB9 /* Images.xcassets */,
+				40D42539194507AB0014EAB9 /* AppDelegate.h */,
+				40D4253A194507AB0014EAB9 /* AppDelegate.m */,
+				40D4253F194507AB0014EAB9 /* ViewController.h */,
+				40D42540194507AB0014EAB9 /* ViewController.m */,
 				40D42532194507AB0014EAB9 /* ioscheckboxes-Info.plist */,
 				40D42533194507AB0014EAB9 /* InfoPlist.strings */,
 				40D42536194507AB0014EAB9 /* main.m */,
@@ -150,6 +159,15 @@
 				40D42552194507AB0014EAB9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40D425651945117E0014EAB9 /* Static Checkboxes */ = {
+			isa = PBXGroup;
+			children = (
+				40D42562194511630014EAB9 /* staticCheckboxes.h */,
+				40D42563194511630014EAB9 /* staticCheckboxes.m */,
+			);
+			name = "Static Checkboxes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				40D42541194507AB0014EAB9 /* ViewController.m in Sources */,
+				40D42564194511630014EAB9 /* staticCheckboxes.m in Sources */,
 				40D4253B194507AB0014EAB9 /* AppDelegate.m in Sources */,
+				40D42561194508260014EAB9 /* checkboxButton.m in Sources */,
 				40D42537194507AB0014EAB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
